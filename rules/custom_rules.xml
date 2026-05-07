@@ -1,0 +1,45 @@
+<group name="local,fim,windows,">
+
+  <rule id="100300" level="12">
+    <if_sid>550</if_sid>
+    <field name="file">C:\\Finance</field>
+    <description>ALERT - Finance file modified</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+  <rule id="100301" level="12">
+    <if_sid>550</if_sid>
+    <field name="file">C:\\HR-Records</field>
+    <description>ALERT - HR Records file modified</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+  <rule id="100302" level="12">
+    <if_sid>550</if_sid>
+    <field name="file">C:\\SensitiveData</field>
+    <description>ALERT - Sensitive data file modified</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+  <rule id="100303" level="12">
+    <if_sid>554</if_sid>
+    <field name="file">C:\\Finance</field>
+    <description>ALERT - New file created in Finance folder</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+  <rule id="100304" level="12">
+    <if_sid>554</if_sid>
+    <field name="file">C:\\HR-Records</field>
+    <description>ALERT - New file created in HR Records folder</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+  <rule id="100305" level="12">
+    <if_sid>554</if_sid>
+    <field name="file">C:\\SensitiveData</field>
+    <description>ALERT - New file created in SensitiveData folder</description>
+    <group>fim,sensitive_data,</group>
+  </rule>
+
+</group>
